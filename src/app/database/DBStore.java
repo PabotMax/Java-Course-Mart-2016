@@ -2,13 +2,14 @@ package app.database;
 
 import app.model.Contact;
 
+import java.sql.SQLException;
 import java.util.Set;
 
 /**
  * Created by mda on 5/13/16.
  */
 public interface DBStore {
-    Long add(Contact contact);
+    Long add(Contact contact) throws SQLException;
     Contact get(Long id);
     Set<Contact> getContacts();
     int remove(Long id);

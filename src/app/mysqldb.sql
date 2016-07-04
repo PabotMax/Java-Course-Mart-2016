@@ -1,10 +1,11 @@
-# DROP TABLE contact_telephone;
-# DROP TABLE emails;
-# DROP TABLE telephone_numbers;
-# DROP TABLE contact;
+#DROP TABLE common;
+#DROP TABLE emails;
+#DROP TABLE telephone_numbers;
+#DROP TABLE contact;
 # DROP TABLE address;
+# DROP TABLE contact_telephone;
 
-CREATE TABLE address(
+/*CREATE TABLE address(
   address_id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   country VARCHAR(30) NOT NULL,
   city VARCHAR(20) NOT NULL,
@@ -51,7 +52,7 @@ CREATE TABLE contact_telephone(
     ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (telephone_number_id) REFERENCES telephone_numbers(telephone_number_id)
     ON DELETE CASCADE ON UPDATE CASCADE
-);
+);*/
 
 INSERT INTO address(
   country, city, street, house_number,
@@ -73,6 +74,7 @@ INSERT INTO telephone_numbers (tel_number) VALUE ('+380557654321');
 
 INSERT INTO contact_telephone (user_id, telephone_number_id) VALUE (1, 1);
 INSERT INTO contact_telephone (user_id, telephone_number_id) VALUE (1, 2);
+
 
 # # Remove from contact table user with specific id
 # DELETE FROM contact WHERE user_id = 1;

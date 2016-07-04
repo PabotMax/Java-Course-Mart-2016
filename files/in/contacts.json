@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "firstName": "Ivan",
+    "lastName": "Ivanov",
+    "address": {
+      "country": "Ukraine",
+      "city": "Kharkiv",
+      "street": "Muranova",
+      "houseNumber": 30,
+      "houseSuffix": "a",
+      "postCode": 61144
+    },
+    "phones": [
+      "380934478587",
+      "380934685211"
+    ],
+    "emails": [
+      "jndmvjmdjv@yandex.ru",
+      "krvvrjmvim@mail.ru"
+    ],
+    "photoPath": "http://some_path_to_image",
+    "birthday": "Jul 16, 1997 9:20:30 PM"
+  },
+  {
+    "id": 2,
+    "firstName": "Igor",
+    "lastName": "Petrov",
+    "address": {
+      "country": "Ukraine",
+      "city": "Kharkiv",
+      "street": "Olla",
+      "houseNumber": 80,
+      "houseSuffix": "b",
+      "postCode": 61888
+    },
+    "phones": [
+      "0390022222"
+    ],
+    "emails": [
+      "ajjjijij@a.a",
+      "bfdvrdvr@b.b"
+    ],
+    "photoPath": "http://some_path_to_image2",
+    "birthday": "Jul 16, 1998 9:20:30 PM"
+  }
+]

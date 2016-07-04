@@ -11,17 +11,12 @@ public class DBMain {
     public static void main(String[] args) throws SQLException {
 
         Connection dbConnection = DBUtilsSample.getDBConnection();
-
-
-        
         Statement statement = dbConnection.createStatement();
-
 
         try {
             DBUtilsSample.createDbUserTable();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-
     }
 }
